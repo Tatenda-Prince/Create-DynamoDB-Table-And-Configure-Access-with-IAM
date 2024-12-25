@@ -1,7 +1,6 @@
 # Create-DynamoDB-Table-And-Configure-Access-with-IAM
 "ChelseaFC starting XI"
 
-![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/5720e7a08f289cc7351bf6ff954427f2f8ae6749/images/Screenshot%202024-12-25%20213137.png)
 
 # Intro 
 
