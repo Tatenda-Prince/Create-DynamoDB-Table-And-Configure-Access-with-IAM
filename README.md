@@ -68,7 +68,14 @@ Your table should now be created, however, you may need to wait a few minutes un
 
 Select your newly created table. On the left pane, click “Explore items”, then “Create item”.
 
-![image alt]() 
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/539d4733b6b1de81e2b554c375e119f9b606ec9c/images/Screenshot%202024-12-25%20204233.png) 
+
+You can now begin populating your attributes with the corresponding values . In my example, I added  “Sanchez” as the "goalkeeper".
+
+
+![image alt]()
+
+
 
 
 
