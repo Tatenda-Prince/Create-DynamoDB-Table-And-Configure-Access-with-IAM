@@ -45,7 +45,19 @@ I Love watching the English Premier league, however, i have decided to create an
 
 Navigate to the DynamoDB dashboard and click “Create table”, as show below.
 
+
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/9635ea83fe4a7e456cfb2f16afc3d080bf181746/images/Screenshot%202024-12-25%20203009.png)
+
+
+Proceed to name your DynamoDB table, then provide a Partition key and optional Sort key. Note, both keys create a composite primary key, composed of the two attributes. All data under a Partition key is sorted by the Sort key value.
+
+For this demonstration, I have chosen “Player Position” as my Partition key and “Player name” as my Sort key because those are my favorite players.
+
+
 ![image alt]()
+
+
+
 
 
 
