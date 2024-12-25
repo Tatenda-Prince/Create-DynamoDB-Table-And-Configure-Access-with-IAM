@@ -162,7 +162,7 @@ We will allow “SSH” traffic to enable us to securely connect to our EC2 Inst
 Note — Allowing from “Anywhere” is a security risk, however for this article, we will allow it for demonstration sake.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/125efdd7dc8908f86c0895eebcfc0e628eb4cecc/images/Screenshot%202024-12-24%20111837.png)
 
 
 Continue to the “Summary”, then click “Launch instance”.
