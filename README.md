@@ -132,7 +132,7 @@ Proceed to the Instance Type options —
 We will choose the “t2.micro” which is part of the AWS free tier.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/609f3822b36b6c9de736dd13d6d8977b2aabec0f/images/Screenshot%202024-12-25%20210703.png)
 
 
 Proceed to the Key pair option —
