@@ -142,7 +142,7 @@ Click on the “Create new key pair” to create a new key pair, then enter your
 Click on “Create key pair”, as show below. The “.pm” file should automatically start downloading on your local system. Locate the file after the download is complete and store it in a safe directory. Later, we can use this key pair to connect to our EC2 Instance through ssh.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/12f24cf58657b43a1a29754b40b6db2d394ad366/images/Screenshot%202024-12-24%20111740%20-%20Copy.png)
 
 
 Continue to the Network settings —
