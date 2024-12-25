@@ -107,7 +107,76 @@ The policy below, written in JSON, “Allows” the assuming of the role “Acti
 
 
 
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/d133ca79e5bcc36a25ffa5195699c4081cd447b2/images/Screenshot%202024-12-24%20111401.png)
+
+
+# Launch EC2 Instance
+
+We need to create an EC2 Instance which we will connect into to use the AWS CLI to scan our DynamoDB table.
+
+Let’s navigate to the EC2 dashboard and click “Launch instance”, as seen below.
+
+
+![image alt]() 
+
+
+You should now see your Amazon EC2 configuration options page. Note, most of the configurations will remain at their default state to launch our required EC2 Instance.
+
+We will select the “Amazon Linux 2 AMI”, as seen below.
+
+
 ![image alt]()
+
+Proceed to the Instance Type options —
+
+We will choose the “t2.micro” which is part of the AWS free tier.
+
+
+![image alt]()
+
+
+Proceed to the Key pair option —
+
+Click on the “Create new key pair” to create a new key pair, then enter your desired key pair name. Select “RSA” for key pair type and “.pem” for private key file format.
+
+Click on “Create key pair”, as show below. The “.pm” file should automatically start downloading on your local system. Locate the file after the download is complete and store it in a safe directory. Later, we can use this key pair to connect to our EC2 Instance through ssh.
+
+
+![image alt]()
+
+
+Continue to the Network settings —
+
+We will use our default VPC. Also, we will keep “Auto-assign public IP” enabled, as this allows our EC2 Instance to automatically receive a public IP address to enable it to connect to the internet upon launch.
+
+We will leave these setting in the default state, as seen below.
+
+
+![image alt]()
+
+
+Continue to the Firewall (Security Group) settings —
+
+We will allow “SSH” traffic to enable us to securely connect to our EC2 Instance and also “HTTPS” and “HTTP” so we can send and received on our browser over the internet.
+
+Note — Allowing from “Anywhere” is a security risk, however for this article, we will allow it for demonstration sake.
+
+
+![image alt]()
+
+
+Continue to the “Summary”, then click “Launch instance”.
+
+
+# Attach IAM Role to EC2 Instance
+
+We now need to attach our DynamoDB read-only access IAM role to our EC2 to allow us to scan our DynamoDB table. Proceed by navigating to your EC2 Instance and selecting it. Click “Actions”, “Security”, then “Modify IAM role”, as shown below.
+
+
+![image alt]()
+
+
+
 
 
 
