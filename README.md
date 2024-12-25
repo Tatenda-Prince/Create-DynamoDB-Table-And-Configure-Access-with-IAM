@@ -1,6 +1,8 @@
 # Create-DynamoDB-Table-And-Configure-Access-with-IAM
 "ChelseaFC starting XI"
 
+![image alt]()
+
 # Intro 
 
 In this article, I’ll show you how to create a starting line up for football team  by going through the steps to create a “ChelseaFC starting XI” Amazon DynamoDB table, populate the table with "Chelsea's best players" and use AWS IAM to demonstrate the principles of least privilege by allowing read-only access to our table using the AWS CLI from an EC2 Instance.
