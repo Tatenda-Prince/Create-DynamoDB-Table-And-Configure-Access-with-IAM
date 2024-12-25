@@ -93,7 +93,7 @@ Navigate to the IAM dashboard and on the left plane click “Roles”, then “C
 Proceed to select “AWS service”. Our use case will involve using an EC2 Instance to access our DynamoDB table, so we will select “EC2”, then click “Next”.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/1b60f9c456b4db76e2089f6208f1bba791e92d3a/images/Screenshot%202024-12-24%20111234.png)
 
 
 
