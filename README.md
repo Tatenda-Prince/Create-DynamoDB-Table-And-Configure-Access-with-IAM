@@ -125,7 +125,7 @@ You should now see your Amazon EC2 configuration options page. Note, most of the
 We will select the “Amazon Linux 2 AMI”, as seen below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/5539937b6e1178db303d292e6c4d3219925cffe7/images/Screenshot%202024-12-25%20210657.png)
 
 Proceed to the Instance Type options —
 
