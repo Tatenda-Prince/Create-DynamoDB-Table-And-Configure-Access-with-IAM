@@ -223,7 +223,29 @@ aws dynamodb scan --table-name <name_of_dynamodb_table> --region us-east-1
 If the command ran successfully without any errors, the items in your table should be displayed, as show below.
 
 
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/95a23a489f7f0c45333c474def4c7695fad383d6/images/Screenshot%202024-12-24%20112551.png)
+
+
+# Success!
+You were able to scan your DynamoDb table and read the items stored in it! Now we should validate our read-only access permissions in Step 4!
+
+
+# Step 4: Validate inability to write item to DynamoDB table
+
+We shouldn’t be able to write to our DynamoDB table based on our IAM Role which allows read-only access from our EC2 Instance. Let’s test this out by attempting to write a new item to our table.
+
+Run the following command to attempt to write an item to our DynamoDB table —
+
+aws dynamodb put-item --table-name <table_name> --item '{"<partition_key>": {"S": "<value>"},"<sort_key>": {"S": "<value>"}}' --region us-east-1
+
+
+You should receive an “AccessDeniedException” error, stating that we are not “authorized to perform” put-item to write to our DynamoDB table, as shown below.
+
 ![image alt]()
+
+
+
+
 
 
 
