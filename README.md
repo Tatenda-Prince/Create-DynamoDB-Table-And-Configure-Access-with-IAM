@@ -61,7 +61,7 @@ After providing a Partition key and Sort key, continue to “Create table”.
 Your table should now be created, however, you may need to wait a few minutes until the status is “Active”, as shown below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/a675b23f01e2b322fdf65506720ff0f8701b5760/images/Screenshot%202024-12-24%20110621.png)
 
 
 # Add items to DynamoDB table
