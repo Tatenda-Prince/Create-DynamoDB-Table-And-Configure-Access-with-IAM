@@ -207,6 +207,22 @@ Connecting using “EC2 Instance Connect”— Select your new EC2 Instance, the
 Using either way, after connecting to your EC2 Instance, your display should be similar to the one below.
 
 
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/d54b63faefd750ef7a1d08cfa700a0c9a3e7b51c/images/Screenshot%202024-12-25%20212328.png)
+
+
+# Scan DynamoDB Table
+
+
+We can now verify that we can scan the DynamoDB table, which assures us that we have read access.
+
+To scan your DynamoDB table, run the AWS CLI command below with the name of your DynamoDB table —
+
+aws dynamodb scan --table-name <name_of_dynamodb_table> --region us-east-1
+
+
+If the command ran successfully without any errors, the items in your table should be displayed, as show below.
+
+
 ![image alt]()
 
 
