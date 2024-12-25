@@ -189,16 +189,23 @@ We’ve now launched our EC2 Instance with an IAM role authorizing read-only acc
 
 # Connect into EC2 Instance
 
-
 Navigate to the EC2 dashboard, then select your EC2 Instance.
 
 Note, there are two ways to connect into your EC2 Instance —
 
 EC2 Instance Connect
+
 SSH from your local machine
+
 I will show you how we can connect using both ways:
 
 Connecting using “EC2 Instance Connect”— Select your new EC2 Instance, then click “Connect” on the top right of the pane. Choose the “EC2 Instance Connect” tab, then click “Connect”, as show below.
+
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/7ee1df4e0c168ed6e363bcca30ee38178cbcefa8/images/Screenshot%202024-12-24%20112216.png)
+
+
+Using either way, after connecting to your EC2 Instance, your display should be similar to the one below.
+
 
 ![image alt]()
 
