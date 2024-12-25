@@ -90,6 +90,8 @@ Now that we’ve created and populated our DynamoDB table with our items, we can
 
 Navigate to the IAM dashboard and on the left plane click “Roles”, then “Create role”.
 
+Proceed to select “AWS service”. Our use case will involve using an EC2 Instance to access our DynamoDB table, so we will select “EC2”, then click “Next”.
+
 
 ![image alt]()
 
