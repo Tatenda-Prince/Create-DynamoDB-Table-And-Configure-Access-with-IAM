@@ -73,6 +73,12 @@ Select your newly created table. On the left pane, click “Explore items”, th
 You can now begin populating your attributes with the corresponding values . In my example, I added  “Sanchez” as the "goalkeeper".
 
 
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/fd71832de3b00cc3a7a031cf2fb6db376c208a23/images/Screenshot%202024-12-25%20204720.png)
+
+
+After adding all items to the DynamoDB table, you can preview the table and all its items, as show below. This ChelseaFootballClub table has been populated with 6 best players.
+
+
 ![image alt]()
 
 
