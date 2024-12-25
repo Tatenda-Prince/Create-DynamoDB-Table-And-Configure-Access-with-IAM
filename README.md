@@ -117,7 +117,7 @@ We need to create an EC2 Instance which we will connect into to use the AWS CLI 
 Let’s navigate to the EC2 dashboard and click “Launch instance”, as seen below.
 
 
-![image alt]() 
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/cc0848484d005ff748da5c0a34d249f5690eb36c/images/Screenshot%202024-12-24%20111552.png) 
 
 
 You should now see your Amazon EC2 configuration options page. Note, most of the configurations will remain at their default state to launch our required EC2 Instance.
