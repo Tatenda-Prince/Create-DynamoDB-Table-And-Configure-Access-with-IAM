@@ -152,7 +152,7 @@ We will use our default VPC. Also, we will keep “Auto-assign public IP” enab
 We will leave these setting in the default state, as seen below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/7c1adaeacd465069c18a9774412f429e4c139627/images/Screenshot%202024-12-24%20111814.png)
 
 
 Continue to the Firewall (Security Group) settings —
