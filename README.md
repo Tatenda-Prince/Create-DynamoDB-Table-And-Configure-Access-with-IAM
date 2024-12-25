@@ -54,7 +54,23 @@ Proceed to name your DynamoDB table, then provide a Partition key and optional S
 For this demonstration, I have chosen “Player Position” as my Partition key and “Player name” as my Sort key because those are my favorite players.
 
 
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/2d4b04507b647597e6c944c84194d87840d89d9c/images/Screenshot%202024-12-24%20110510.png)
+
+After providing a Partition key and Sort key, continue to “Create table”.
+
+Your table should now be created, however, you may need to wait a few minutes until the status is “Active”, as shown below.
+
+
 ![image alt]()
+
+
+# Add items to DynamoDB table
+
+Select your newly created table. On the left pane, click “Explore items”, then “Create item”.
+
+![image alt]() 
+
+
 
 
 
