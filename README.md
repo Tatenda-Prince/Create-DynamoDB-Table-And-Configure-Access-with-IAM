@@ -241,7 +241,11 @@ aws dynamodb put-item --table-name <table_name> --item '{"<partition_key>": {"S"
 
 You should receive an “AccessDeniedException” error, stating that we are not “authorized to perform” put-item to write to our DynamoDB table, as shown below.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/e481d097f770b27e8ddf7dedafb32eb969da308a/images/Screenshot%202024-12-24%20115110.png)
+
+# Congratulations!
+
+You’ve just become a “football Coach” You’ve successfully created an Amazon DynamoDB table and configured read-only authorization access from EC2 Instances using IAM!
 
 
 
