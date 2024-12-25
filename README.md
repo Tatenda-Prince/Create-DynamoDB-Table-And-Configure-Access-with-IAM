@@ -96,6 +96,22 @@ Proceed to select “AWS service”. Our use case will involve using an EC2 Inst
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/1b60f9c456b4db76e2089f6208f1bba791e92d3a/images/Screenshot%202024-12-24%20111234.png)
 
 
+Now let’s search through the AWS managed IAM policies. These policies cover common use cases and are provided by AWS in your account. Search “DynamoDB”, select the “DynamoDBReadOnlyAccess” policy, then click “Next”.
+
+
+![image alt]()
+
+
+
+The policy below, written in JSON, “Allows” the assuming of the role “Action” from the EC2 Instance “Service”. Proceed by naming your IAM role, then clicking “Create role”.
+
+
+
+![image alt]()
+
+
+
+
 
 
 
