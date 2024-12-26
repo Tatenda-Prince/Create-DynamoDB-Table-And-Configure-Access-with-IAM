@@ -2,9 +2,7 @@
 "ChelseaFC starting XI"
 
 
-![image alt]()
-
-
+![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/acec58ab70d77e50f183e4682a0fb85cf896d34a/images/Screenshot%202024-12-26%20145454.png)
 
 
 # Intro 
