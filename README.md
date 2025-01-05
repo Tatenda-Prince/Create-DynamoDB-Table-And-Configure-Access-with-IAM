@@ -129,7 +129,7 @@ We will select the “Amazon Linux 2 AMI”, as seen below.
 
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/5539937b6e1178db303d292e6c4d3219925cffe7/images/Screenshot%202024-12-25%20210657.png)
 
-Proceed to the Instance Type options —
+## Proceed to the Instance Type options —
 
 We will choose the “t2.micro” which is part of the AWS free tier.
 
@@ -137,7 +137,7 @@ We will choose the “t2.micro” which is part of the AWS free tier.
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/609f3822b36b6c9de736dd13d6d8977b2aabec0f/images/Screenshot%202024-12-25%20210703.png)
 
 
-Proceed to the Key pair option —
+## Proceed to the Key pair option —
 
 Click on the “Create new key pair” to create a new key pair, then enter your desired key pair name. Select “RSA” for key pair type and “.pem” for private key file format.
 
