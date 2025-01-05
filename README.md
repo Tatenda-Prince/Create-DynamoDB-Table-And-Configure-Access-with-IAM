@@ -36,14 +36,14 @@ I Love watching the English Premier league, however, i have decided to create an
 
 # Prerequisites
 
-— AWS account and IAM user (Free Tier)
+1.AWS account and IAM user (Free Tier)
 
-— A Command Line Interface (CLI)
+2.A Command Line Interface (CLI)
 
 
 # Step 1: Create and populate new DynamoDB table
 
-# Create DynamoDB table
+## Create DynamoDB table
 
 Navigate to the DynamoDB dashboard and click “Create table”, as show below.
 
@@ -66,7 +66,7 @@ Your table should now be created, however, you may need to wait a few minutes un
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/a675b23f01e2b322fdf65506720ff0f8701b5760/images/Screenshot%202024-12-24%20110621.png)
 
 
-# Add items to DynamoDB table
+## Add items to DynamoDB table
 
 Select your newly created table. On the left pane, click “Explore items”, then “Create item”.
 
@@ -88,7 +88,7 @@ Now that we’ve created and populated our DynamoDB table with our items, we can
 
 # Step 2: Launch EC2 with IAM role to scan DynamoDB table
 
-# Create IAM Role to allow read-only access authorization
+## Create IAM Role to allow read-only access authorization
 
 Navigate to the IAM dashboard and on the left plane click “Roles”, then “Create role”.
 
@@ -112,7 +112,7 @@ The policy below, written in JSON, “Allows” the assuming of the role “Acti
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/d133ca79e5bcc36a25ffa5195699c4081cd447b2/images/Screenshot%202024-12-24%20111401.png)
 
 
-# Launch EC2 Instance
+## Launch EC2 Instance
 
 We need to create an EC2 Instance which we will connect into to use the AWS CLI to scan our DynamoDB table.
 
@@ -147,7 +147,7 @@ Click on “Create key pair”, as show below. The “.pm” file should automat
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/12f24cf58657b43a1a29754b40b6db2d394ad366/images/Screenshot%202024-12-24%20111740%20-%20Copy.png)
 
 
-Continue to the Network settings —
+## Continue to the Network settings —
 
 We will use our default VPC. Also, we will keep “Auto-assign public IP” enabled, as this allows our EC2 Instance to automatically receive a public IP address to enable it to connect to the internet upon launch.
 
@@ -157,7 +157,7 @@ We will leave these setting in the default state, as seen below.
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/7c1adaeacd465069c18a9774412f429e4c139627/images/Screenshot%202024-12-24%20111814.png)
 
 
-Continue to the Firewall (Security Group) settings —
+## Continue to the Firewall (Security Group) settings —
 
 We will allow “SSH” traffic to enable us to securely connect to our EC2 Instance and also “HTTPS” and “HTTP” so we can send and received on our browser over the internet.
 
@@ -167,7 +167,7 @@ Note — Allowing from “Anywhere” is a security risk, however for this artic
 ![image alt](https://github.com/Tatenda-Prince/Create-DynamoDB-Table-And-Configure-Access-with-IAM/blob/125efdd7dc8908f86c0895eebcfc0e628eb4cecc/images/Screenshot%202024-12-24%20111837.png)
 
 
-Continue to the “Summary”, then click “Launch instance”.
+## Continue to the “Summary”, then click “Launch instance”.
 
 
 # Attach IAM Role to EC2 Instance
@@ -189,17 +189,17 @@ We’ve now launched our EC2 Instance with an IAM role authorizing read-only acc
 
 # Step 3: Verifying scanning of our DynamoDB table
 
-# Connect into EC2 Instance
+## Connect into EC2 Instance
 
 Navigate to the EC2 dashboard, then select your EC2 Instance.
 
 Note, there are two ways to connect into your EC2 Instance —
 
-EC2 Instance Connect
+1.EC2 Instance Connect
 
-SSH from your local machine
+2.SSH from your local machine
 
-I will show you how we can connect using both ways:
+I will show you how we can connect using Instance Connect:
 
 Connecting using “EC2 Instance Connect”— Select your new EC2 Instance, then click “Connect” on the top right of the pane. Choose the “EC2 Instance Connect” tab, then click “Connect”, as show below.
 
@@ -219,7 +219,9 @@ We can now verify that we can scan the DynamoDB table, which assures us that we 
 
 To scan your DynamoDB table, run the AWS CLI command below with the name of your DynamoDB table —
 
+```language
 aws dynamodb scan --table-name <name_of_dynamodb_table> --region us-east-1
+```
 
 
 If the command ran successfully without any errors, the items in your table should be displayed, as show below.
@@ -238,7 +240,9 @@ We shouldn’t be able to write to our DynamoDB table based on our IAM Role whic
 
 Run the following command to attempt to write an item to our DynamoDB table —
 
+```language
 aws dynamodb put-item --table-name <table_name> --item '{"<partition_key>": {"S": "<value>"},"<sort_key>": {"S": "<value>"}}' --region us-east-1
+```
 
 
 You should receive an “AccessDeniedException” error, stating that we are not “authorized to perform” put-item to write to our DynamoDB table, as shown below.
