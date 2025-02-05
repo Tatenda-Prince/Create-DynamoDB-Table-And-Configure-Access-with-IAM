@@ -11,7 +11,7 @@ In this article, I’ll show you how to create a starting line up for football t
 
 # Background
 
-# Amazon DynamoDB (DynamoDB)
+## Amazon DynamoDB (DynamoDB)
 
 DynamoDB is an AWS managed database service that provides fast and flexible storage for applications that need to store and retrieve data quickly. It is a NoSQL database, meaning it does not use the traditional SQL relational database structure. Instead, it stores data in tables with a simple key-value structure.
 
@@ -19,29 +19,29 @@ DynamoDB is designed to handle large amounts of data and support high levels of 
 
 One of the main benefits of DynamoDB is its low latency. It is optimized for fast reads and writes, making it a good choice for applications that require real-time data access.
 
-# AWS Identity and Access Management (IAM) Role
+## AWS Identity and Access Management (IAM) Role
 
 In IAM, a IAM role is not a user or group, and does not have its own set of credentials. It is an AWS identity with a set of permissions that you can use to grant AWS services and applications access to your resources.
 
 
-# Partition Key
+## Partition Key
 
 In Amazon DynamoDB, a partition key is a special type of primary key used to distribute data evenly across the servers in a DynamoDB table, allowing the table to scale horizontally and handle a large amount of data and traffic.
 
 Each item in a DynamoDB table has a unique primary key, which consists of a partition key and an optional sort key, which is used to sort the data within a partition.
 
-# Use Case
+## Use Case
 
 I Love watching the English Premier league, however, i have decided to create an Amazon DynamoDB table to store my all time "Chelsea's best starting XI" and give access to others to view the items in the table.
 
-# Prerequisites
+## Prerequisites
 
 1.AWS account and IAM user (Free Tier)
 
 2.A Command Line Interface (CLI)
 
 
-# Step 1: Create and populate new DynamoDB table
+## Step 1: Create and populate new DynamoDB table
 
 ## Create DynamoDB table
 
